@@ -1,0 +1,16 @@
+print("Firmanın katma değer cirosunu hesaplamak için değerleri giriniz.")
+
+a=int(input("Toplam satış mikatrınızı giriniz: "))
+b=int(input("Hammadde maliyetinizi giriniz: "))
+c=int(input("Bakım onarım giderlerinizi giriniz: "))
+d=int(input("Sevkiyat giderlerinizi giriniz: "))
+e=int(input("Satın alınan hizmet giderlerinizi giriniz: "))
+def katmaDegerciro():
+    sonuc=a-(b+c+d+e)
+    if sonuc>1000:
+        print("İşletme katma değer cirosu yüksek.")
+    elif 500<sonuc<999:
+        print("İşletme katma değer cirosu normal.")
+    else:
+        print("İşletme katma değer cirosu düşük.")
+katmaDegerciro() 
