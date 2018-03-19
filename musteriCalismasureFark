@@ -1,0 +1,20 @@
+print("2017 ve 2016 yılları müşterilerle çalışma süreleri ve arasındaki fark:")
+
+x=170
+y=50
+z=x+50
+t=y+20
+def calismaSuresi2016():
+    global a
+    a=x/y
+    print("2016 yılındaki müşterilerle çalışma süresi:", a)
+calismaSuresi2016()
+def calismaSuresi2017():
+    global b
+    b=z/t
+    print("2017 yılındaki müşterilerle çalışma süresi:", b)
+calismaSuresi2017()
+def fark():
+    fark=a-b
+    print("2016 ile 2017 yılları arasındaki çalışma süresi farkı:", fark)
+fark()
