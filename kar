@@ -1,0 +1,40 @@
+print("İşletmenin ilk ve son 6 aylık gelir ve giderlerini ve yıl sonunda karını hesaplamak için değerleri giriniz: ")
+
+x=int(input("Yazılım Geiri: "))
+y=int(input("Finansman Geliri: "))
+z=int(input("Ürün Satış Geliri: "))
+t=int(input("Sponsorluk Geliri: "))
+v=int(input("E-Ticaret Geliri: "))
+a=int(input("Çalışan Maaşları: "))
+b=int(input("Kira Gideri: "))
+c=int(input("Donanım Maliyeti: "))
+d=int(input("Bakım Maliyeti: "))
+def ilkGelir():
+    global k
+    k=x+y+z
+    print("İlk 6 Aylık Gelirler: ", k)
+ilkGelir()
+def ilkGider():
+    global l
+    l=a+b+c
+    print("İlk 6 Aylık Giderler: ", l)
+ilkGider()
+def sonGelir():
+    global m
+    m=x+t+v+z
+    print("Son 6 Aylık Gelirler: ", m)
+sonGelir()
+def sonGider():
+    global n
+    n=a+b+d
+    print("Son 6 Aylık Giderler: ", n)
+sonGider()
+def kar():
+    kar=(k-l)-(m-n)
+    if kar>5000:
+        print("İşletme çok karlı bir yıl geçirdi.")
+    elif 1000<kar<5000:
+        print("İşletmenin yıllık karı normal.")
+    else:
+        print("İşletme bu yıl yeterince karda değil.")
+kar()
