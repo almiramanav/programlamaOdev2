@@ -1,0 +1,25 @@
+print("Firmanın ortalama stokunu hesaplamak için istenilen değerleri giriniz: ")
+
+x=25
+y=20
+z=10
+a=10
+b=15
+c=5
+d=int(input("Koltuk sayısı: "))
+e=int(input("Yatak sayısı: "))
+f=int(input("Dolap sayısı: "))
+def donemBasistok():
+    global k
+    k=d+e+f
+    print("Dönem başı stok: ", k)
+donemBasistok()
+def donemSonustok():
+    global m
+    m=(a+b+c)+k-(x+y+z)
+    print("Dönem sonu stok: ", m)
+donemSonustok()
+def ortalamaStok():
+    sonuc=(k+m)/2
+    print("Ortalama Stok: ", sonuc)
+ortalamaStok()
